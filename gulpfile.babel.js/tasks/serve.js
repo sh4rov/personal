@@ -13,7 +13,9 @@ const serve = () => {
   bs.init({
     server: {
       baseDir: './dist'
-    }
+    },
+    notify: false,
+    open: false
   });
   
   watch(paths.watch.html, views).on('change', bs.reload)

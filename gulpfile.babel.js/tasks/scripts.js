@@ -12,9 +12,7 @@ const scripts = () => {
   return src(paths.scripts.src, { sourcemaps: 'true' })
     .pipe(plumber())
     .pipe(debug())
-    .pipe(babel({
-       presets: ['@babel/env']
-    }))
+    .pipe(babel())
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(dest(paths.scripts.dist))
