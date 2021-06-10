@@ -7,6 +7,7 @@ import serve from './tasks/serve'
 import scripts from './tasks/scripts'
 import fonts from './tasks/fonts'
 import deploy from './tasks/deploy'
+import images from './tasks/images'
 
 export {
   styles,
@@ -15,7 +16,8 @@ export {
   clean,
   serve,
   deploy,
-  fonts
+  fonts,
+  images
 }
 
 export const dev = series(

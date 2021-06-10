@@ -25,8 +25,13 @@ module.exports = {
     img: src + '/img/**/*.{jpg,png,gif,webp,svg}'
   },
 
-   fonts: {
+  fonts: {
     src: src + '/fonts/**/*.{ttf,woff,woff2}',
     dist: dist + '/fonts',
   },
+
+  images: {
+    src: src + '/img/**/*.{jpg,png,webp,gif}',
+    dist: dist + '/img/'
+  }
 }
