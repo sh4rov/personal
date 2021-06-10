@@ -1,5 +1,5 @@
-$red: #bb1919;
+@use 'vars' as v;
 
-.elem {
-  color: $red;
+body {
+  font-family: v.$rc;
 }

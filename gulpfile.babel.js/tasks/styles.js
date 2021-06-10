@@ -3,6 +3,7 @@ import sass from 'gulp-dart-sass'
 import postcss from 'gulp-postcss'
 import cssnano from 'cssnano'
 import autoprefixer from 'autoprefixer'
+import changed from 'gulp-changed'
 import groupMedia from 'gulp-group-css-media-queries'
 import rename from 'gulp-rename'
 import plumber from 'gulp-plumber'
@@ -21,7 +22,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(debug())
     .pipe(
-      changed(paths.dest, {
+      changed(paths.dist + '/**/*.css', {
         extention: '.css',
       })
     )

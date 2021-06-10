@@ -15,7 +15,7 @@ module.exports = {
   scripts: {
     src: src + '/js/**/*.js',
     dist: dist + '/js'
-  }, 
+  },
 
   watch: {
     css: src + '/styles/**/*.css',
@@ -30,4 +30,3 @@ module.exports = {
     dist: dist + '/fonts',
   },
 }
-
