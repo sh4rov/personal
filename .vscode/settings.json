@@ -1,9 +1,10 @@
 {
   "files.exclude": {
-    "prettierrc.yml": true,
     "package-lock.json": true,
     ".babelrc": true,
+    "node_modules": true,
+    ".prettierignore.yml": true,
     ".gitignore": true,
-    "node_modules": true
+    "prettierrc.yml": true
   }
 }
