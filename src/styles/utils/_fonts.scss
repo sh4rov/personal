@@ -1,8 +1,6 @@
-@use 'vars' as v;
-
 /* roboto-condensed-regular - latin_cyrillic */
 @font-face {
-  font-family: v.$rc;
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-display: swap;

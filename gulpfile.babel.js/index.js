@@ -20,15 +20,14 @@ export {
   images
 }
 
-export const dev = series(
-  clean,
-  parallel(
-    styles,
-    views,
-    scripts,
-    fonts,
-  ),
-  serve
+export const staticFiles = parallel(
+  styles,
+  views,
+  scripts,
+  fonts,
+  images
 )
 
+export const dev = series(staticFiles, serve)
+export const build = series(clean, staticFiles)
 export default dev

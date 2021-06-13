@@ -32,6 +32,6 @@ module.exports = {
 
   images: {
     src: src + '/img/**/*.{jpg,png,webp,gif}',
-    dist: dist + '/img/'
+    dist: dist + '/img'
   }
 }

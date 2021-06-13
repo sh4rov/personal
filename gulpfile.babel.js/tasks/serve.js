@@ -8,6 +8,7 @@ import paths from '../paths'
 import views from './views'
 import styles from './styles'
 import scripts from './scripts'
+import images from './images'
 
 const serve = () => {
   bs.init({
@@ -21,6 +22,7 @@ const serve = () => {
   watch(paths.watch.html, views).on('change', bs.reload)
   watch(paths.watch.scss, styles).on('change', bs.reload)
   watch(paths.watch.js, scripts).on('change', bs.reload)
+  watch(paths.watch.img, images).on('change', bs.reload)
 
 }
 

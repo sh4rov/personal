@@ -1,0 +1,40 @@
+@use '../vars/fonts';
+
+
+.page {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: auto;
+  border: 0;
+  white-space: nowrap;
+}
+
+.page__body {
+  font-family: fonts.$primary, sans-serif;
+}
+
+.page__wrapper {
+
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

@@ -5,6 +5,7 @@
     "node_modules": true,
     ".prettierignore.yml": true,
     ".gitignore": true,
-    "prettierrc.yml": true
+    "prettierrc.yml": true,
+    "gulpfile.babel.js": true
   }
 }
