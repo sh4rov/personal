@@ -15,5 +15,9 @@
 @mixin flex-row-center {
   @include flex-row();
   justify-content: center;
+}
 
+@mixin absolute-center() {
+  left: 50%;
+  transform: translateX(-50%);
 }

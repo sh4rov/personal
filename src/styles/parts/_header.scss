@@ -9,7 +9,9 @@
   background-size: cover;
 
   &__container {
-    @include mixins.flex-col-center();
+    position: relative;
+    @include mixins.flex-col-center;
+    padding-bottom: 30px;
     text-align: center;
   }
 
@@ -27,7 +29,7 @@
   }
 
   &__subtitle {
-    @include mixins.flex-col();
+    @include mixins.flex-col;
   }
 
   &__span {
@@ -35,5 +37,13 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 1.5;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 30px;
+    @include mixins.absolute-center;
+    border: none;
+    background: none;
   }
 }
