@@ -24,6 +24,8 @@
 }
 
 .page__body {
+  display: flex;
+  flex-direction: column;
   font-family: fonts.$primary, sans-serif;
 }
 
@@ -32,9 +34,13 @@
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 290px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media (min-width: 1140px) {
+    max-width: 1140px;
+  }
 }
