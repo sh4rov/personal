@@ -3,6 +3,7 @@ export const dist = './dist'
 
 module.exports = {
   styles: {
+    main: src + '/styles/**/main.scss',
     src:  src + '/styles/**/*.scss',
     dist: dist + '/css'
   },
@@ -18,11 +19,12 @@ module.exports = {
   },
 
   watch: {
-    css: src + '/styles/**/*.css',
+    css: dist + '/styles/**/*.css',
     scss: src + '/styles/**/*.scss',
     html: src + '/**/*.html',
     js: src + '/js/**/*.js',
-    img: src + '/img/**/*.{jpg,png,gif,webp,svg}'
+    img: src + '/img/**/*.{jpg,png,gif,webp,svg}',
+    video: src + '/video/**/*.mp4',
   },
 
   fonts: {
@@ -31,7 +33,12 @@ module.exports = {
   },
 
   images: {
-    src: src + '/img/**/*.{jpg,png,webp,gif}',
+    src: src + '/img/**/*.{jpg,png,webp,gif,mp4}',
     dist: dist + '/img'
+  },
+
+  video: {
+    src: src + '/video/**/*.mp4',
+    dist: dist + '/video/'
   }
 }

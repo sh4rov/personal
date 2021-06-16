@@ -1,4 +1,5 @@
 @use '../vars/fonts';
+@use '../utils/brakepoints' as bp;
 
 
 .page {
@@ -36,7 +37,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (min-width: 1140px) {
-    max-width: 1140px;
+  @media (min-width: bp.$sm) {
+    max-width: 1110px;
   }
 }
