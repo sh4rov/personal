@@ -7,6 +7,7 @@
   overflow: hidden;
   display: flex;
   min-height: 360px;
+  margin-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -23,7 +24,7 @@
   }
 
   &__media {
-    width: 100%;
+    min-width: 100%;
   }
 
 

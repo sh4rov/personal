@@ -21,14 +21,13 @@ const styles = () => {
 
   return src(paths.styles.main, { 
     sourcemaps: true,
-    since: lastRun(styles)
+    // since: lastRun(styles)
   })
     .pipe(plumber())
     .pipe(debug())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(groupMedia())
-    .pipe(remember('styles'))
     .pipe(
       rename({
         suffix: '.min',
