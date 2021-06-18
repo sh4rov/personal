@@ -7,11 +7,8 @@ import paths from '../paths'
 import remember from 'gulp-remember'
 
 const views = () => {
-  return src(paths.views.src, {
-    sience: lastRun(views)
-  })
+  return src(paths.views.src)
     .pipe(plumber())
-    .pipe(remember('views'))
     .pipe(debug(src))
     .pipe(fileinclude({
       prefix: '@@',

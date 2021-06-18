@@ -9,6 +9,7 @@ import fonts from './tasks/fonts'
 import deploy from './tasks/deploy'
 import images from './tasks/images'
 import video from './tasks/video'
+import favicon from './tasks/favicon'
 
 export {
   styles,
@@ -19,7 +20,8 @@ export {
   deploy,
   fonts,
   images,
-  video
+  video,
+  favicon
 }
 
 export const staticFiles = parallel(
