@@ -1,0 +1,22 @@
+@use '../utils/rem' as *;
+@use '../utils/mixins' as mixins;
+
+.copyright {
+  @include mixins.flex-col;
+  text-align: center;
+
+  &__name {
+    font-size: rem(18px);
+    font-weight: 700;
+  }
+
+  &__desc {
+    font-size: rem(14px);
+    font-weight: 600;
+  }
+
+  &__name,
+  &__desc {
+    color: #7e9ec9;
+  }
+}
