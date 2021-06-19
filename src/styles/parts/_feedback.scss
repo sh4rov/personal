@@ -1,0 +1,22 @@
+@use '../vars/colors' as colors;
+@use '../utils/mixins' as mixins;
+
+.feedback {
+  @include mixins.flex-col;
+  align-items: center;
+
+  &__button {
+    margin-bottom: 15px;
+    padding: 15px 30px;
+    color:#fff;
+    font-size: 2;
+    text-decoration: none;
+    border: 4px solid #fff;
+    border-radius: 30px;
+  }
+
+  &__desc {
+    color: colors.$blue;
+    text-align: center;
+  }
+}

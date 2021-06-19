@@ -4,7 +4,6 @@ import plumber from 'gulp-plumber'
 import debug from 'gulp-debug'
 
 import paths from '../paths'
-import remember from 'gulp-remember'
 
 const views = () => {
   return src(paths.views.src)
