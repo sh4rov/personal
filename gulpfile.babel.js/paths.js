@@ -34,7 +34,7 @@ module.exports = {
 
   images: {
     src: src + '/img/**/*.{jpg,png,webp,gif,mp4}',
-    favicons: src + '/img/faicons/*.png',
+    favicons: src + '/img/favicons/*.png',
     dist: dist + '/img'
   },
 

@@ -1,0 +1,11 @@
+.footer {
+  padding: {
+    top: 45px;
+    bottom: 45px;
+  }
+  background-color: #1e4776;
+
+  &__col:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
+}
