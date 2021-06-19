@@ -1,0 +1,23 @@
+@use '../utils/mixins' as mixins;
+@use '../utils//rem' as rem;
+
+.socials {
+  @include mixins.flex-col;
+  align-items: center;
+
+  &__title {
+    font-size: rem(14px);
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    @include mixins.flex-row;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: center;
+  }
+  
+  
+}

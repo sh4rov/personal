@@ -1,9 +1,20 @@
+@use '../utils//mixins' as mixins;
+
 .footer {
   padding: {
     top: 45px;
     bottom: 45px;
   }
   background-color: #1e4776;
+
+  &__container {
+    @include mixins.flex-row;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    max-width: 350px;
+  }
 
   &__col:not(:last-of-type) {
     margin-bottom: 50px;

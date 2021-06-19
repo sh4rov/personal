@@ -33,7 +33,7 @@ module.exports = {
   },
 
   images: {
-    src: src + '/img/**/*.{jpg,png,webp,gif,mp4}',
+    src: src + '/img/**/*.{jpg,svg,png,webp,gif,mp4}',
     favicons: src + '/img/favicons/*.png',
     dist: dist + '/img'
   },
