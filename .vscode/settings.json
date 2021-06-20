@@ -4,7 +4,7 @@
     ".prettierignore.yml": true,
     ".gitignore": true,
     "prettierrc.yml": true,
-    "gulpfile.babel.js": true,
-    "package-lock.json": true
+    "package-lock.json": true,
+    "gulpfile.babel.js": true
   }
 }
