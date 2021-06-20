@@ -1,15 +1,22 @@
 @use '../vars/colors' as colors;
 @use '../utils/mixins' as mixins;
+@use '../utils/brakepoints' as bp;
+@use '../utils/rem' as *;
 
 .feedback {
   @include mixins.flex-col;
+
+  @media(min-width: bp.$sm) {
+    align-items: center;
+  }
 
   &__button {
     max-width: 272px;
     margin-bottom: 15px;
     padding: 15px 30px;
+    font-size: rem(16px);
+    font-weight: 600;
     color:#fff;
-    font-size: 2;
     text-decoration: none;
     border: 3px solid #fff;
     border-radius: 50px;

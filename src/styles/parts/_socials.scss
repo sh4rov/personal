@@ -1,5 +1,6 @@
 @use '../utils/mixins' as mixins;
 @use '../utils/rem' as *;
+@use '../utils/brakepoints' as bp;
 
 .socials {
   @include mixins.flex-col;
@@ -15,6 +16,10 @@
     @include mixins.flex-row;
     align-self: stretch;
     align-items: center;
+
+    @media(min-width: bp.$sm) {
+      align-self: center;
+    }
   }
 
   &__link object {
