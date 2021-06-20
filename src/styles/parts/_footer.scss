@@ -1,6 +1,9 @@
 @use '../utils//mixins' as mixins;
+@use '../utils/brakepoints' as bp;
 
 .footer {
+  @include mixins.flex-col-center;
+
   padding: {
     top: 45px;
     bottom: 45px;
@@ -8,8 +11,12 @@
   background-color: #1e4776;
 
   &__container {
-    @include mixins.flex-row;
-    flex-wrap: wrap;
+    
+
+    @media (min-width: bp.$xl) {
+      @include mixins.flex-row;
+      flex-wrap: wrap;
+    }
   }
 
   &__col {
@@ -17,6 +24,7 @@
   }
 
   &__col:not(:last-of-type) {
+    margin-right: 30px;
     margin-bottom: 50px;
   }
 }

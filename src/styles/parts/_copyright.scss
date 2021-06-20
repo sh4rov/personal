@@ -3,7 +3,6 @@
 
 .copyright {
   @include mixins.flex-col;
-  text-align: center;
 
   &__name {
     font-size: rem(18px);

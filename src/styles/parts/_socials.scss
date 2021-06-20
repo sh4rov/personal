@@ -3,8 +3,7 @@
 
 .socials {
   @include mixins.flex-col;
-  align-items: center;
-
+ 
   &__title {
     font-size: rem(14px);
     font-weight: 600;
@@ -14,9 +13,16 @@
 
   &__list {
     @include mixins.flex-row;
-    justify-content: space-between;
     align-self: stretch;
     align-items: center;
+  }
+
+  &__link object {
+    pointer-events: none;
+  }
+
+  &__link:not(:last-of-type) {
+    margin-right: 30px;
   }
   
   
