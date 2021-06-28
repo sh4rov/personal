@@ -13,22 +13,19 @@
   }
 
   &__list {
-    @include mixins.flex-row;
+    display: flex;
     align-self: stretch;
     align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
 
     @media(min-width: bp.$sm) {
-      align-self: center;
+      max-width: 272px;
     }
   }
-
+  
   &__link object {
     pointer-events: none;
   }
 
-  &__link:not(:last-of-type) {
-    margin-right: 30px;
-  }
-  
-  
 }
