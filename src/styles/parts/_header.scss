@@ -7,7 +7,6 @@
   overflow: hidden;
   display: flex;
   min-height: 360px;
-  margin-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -32,7 +31,8 @@
     position: relative;
     display: flex;
     flex-flow: column;
-    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
@@ -83,5 +83,6 @@
 
   &__icon {
     display: block;
+    pointer-events: none;
   }
 }

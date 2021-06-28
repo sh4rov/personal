@@ -4,7 +4,13 @@
 @use '../utils/rem' as *;
 
 .portfolio {
+  padding-top: 40px;
   padding-bottom: 60px;
+
+  @media (min-width: bp.$md) {
+    padding-top: 80px;
+    padding-bottom: 115px;
+  }
 
   &__title {
     margin-bottom: 30px;
