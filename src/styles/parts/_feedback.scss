@@ -5,9 +5,10 @@
 
 .feedback {
   @include mixins.flex-col;
+  align-items: center;
 
-  @media(min-width: bp.$sm) {
-    align-items: center;
+  @media(min-width: bp.$lg) {
+    align-items: initial;
   }
 
   &__button {
@@ -24,5 +25,11 @@
 
   &__desc {
     color: colors.$blue;
+    text-align: center;
+    line-height: 1.3;
+
+    @media(min-width: bp.$lg) {
+      text-align: initial;
+    }
   }
 }
