@@ -6,18 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href=@@webRoot/css/main.min.css>
   <title>Page Title</title>
 </head>
 <body class="page__body">
-
-  @@include('parts/_header.html')
-
-  @@include('parts/_main.html')
-
-  @@include('parts/_footer.html')
-
+    @@include('parts/_header.html')
+    <main>
+      @@include('parts/_portfolio.html')
+    </main>
+    @@include('parts/_footer.html')
   <script src="./js/scripts.min.js"></script>
-
 </body>
 </html>
