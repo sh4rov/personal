@@ -1,4 +1,4 @@
-@use '../vars/fonts';
+@use '../vars/fonts' as fonts;
 @use '../utils/brakepoints' as bp;
 
 
@@ -6,10 +6,23 @@
   box-sizing: border-box;
 }
 
+.page__body {
+  font-family: fonts.$primary ;
+}
+
+.page,
+.page__body {
+  height: 100%;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .visually-hidden {
@@ -43,4 +56,8 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.footer {
+  flex-shrink: 0;
 }

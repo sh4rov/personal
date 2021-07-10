@@ -1,0 +1,80 @@
+@use '../utils/rem' as *;
+@use '../utils/mixins' as mixins;
+@use '../utils/brakepoints' as bp;
+@use '../vars/fonts' as fonts;
+@use '../vars/colors' as colors;
+
+.preview {
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: rem(28px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media(min-width: bp.$sm) {
+      margin-bottom: 40px;
+      font-size: rem(46px);
+    }
+  }
+
+  &__img-wrap {
+    max-width: 290px;
+
+    @media(min-width: bp.$xs) {
+      max-width: 892px;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__desc {
+    max-width: 720px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__adress {
+    display: flex;
+    margin-bottom: 50px;
+
+    @media (min-width: bp.$sm) {
+      margin-bottom: 60px;
+    }
+  }
+  
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    border-color: colors.$blue;
+  }
+
+  &__button-inner {
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    text-transform: uppercase;
+    color: currentColor;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+}

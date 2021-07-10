@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href=@@webRoot/css/main.min.css>
+  <title>Верстка сайта «Форест-тревел»</title>
+</head>
+
+<body class="page__body">
+  <main>
+    <section class="preview">
+      <div class="container preview__container">
+        <h1 class="main-title preview__title">Верстка сайта &laquo;Форест-тревел&raquo;</h1>
+        <div class="preview__img-wrap">
+          <picture>
+            <source srcset=@@webRoot/img/content/img-forest.jpg media="(min-width: 576px)">
+            <img class="preview__img img" src=@@webRoot/img/content/img-forest.jpg alt="Фото проекта Forest Travel">
+          </picture>
+        </div>
+        <p class="preview__desc">
+          Верстка многостраничного сайта. Главная, страница с&nbsp;услугами, карта проезда с&nbsp;формой обратной связи,
+          страница со&nbsp;статьей.
+        </p>
+        <div class="preview__adress">
+          Адрес сайта: 
+          <a class="preview__link" href="javascript:void(0)">&nbsp;site.ru</a>
+        </div>
+
+        <a href="@@webRoot" class="button preview__button">
+          <svg width="8" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.8 5.448H3.048L4.712 8.2h-2.16L.184 4.584 2.552.968h2.16L3.048 3.72H7.8v1.728z" fill="#275BEC"/>
+          </svg>
+          <span class="preview__button-inner">Вернуться на главную</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  @@include('../../parts/_footer.html')
+</body>
+
+</html>

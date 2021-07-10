@@ -12,28 +12,26 @@
   }
 
   &__button {
+    margin-bottom: 15px;
     max-width: 272px;
     width: 100%;
-
-    margin-bottom: 15px;
-    padding: 15px 15px;
-
-    font-size: rem(16px);
+  
     font-weight: 600;
+    border-color: #fff;
+  }
+
+  &__link {
     color:#fff;
     line-height: 1;
+    font-size: rem(16px);
     vertical-align: middle;
     letter-spacing: 0.5px;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
-
-    border: 3px solid #fff;
-    border-radius: 50px;
   }
 
   &__desc {
-    color: colors.$blue;
+    color: colors.$blue-light;
     text-align: center;
     line-height: 1.3;
 

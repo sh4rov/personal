@@ -1,6 +1,7 @@
 @forward 'utils/normalize';
 @forward 'utils/fonts';
 @forward 'utils/base';
+@forward 'parts/global';
 
 
 @use 'vars/colors' as colors;
@@ -12,3 +13,4 @@
 @forward 'parts/feedback';
 @forward 'parts/socials';
 @forward 'parts/copyright';
+@forward 'parts/preview';
